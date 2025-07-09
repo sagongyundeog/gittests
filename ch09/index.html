@@ -1,9 +1,9 @@
     <script>
-        var x, y;
-        for(x=2; x<=5: x++) {
-            document.write("<b> ---[" + x +"단]--- </b>" + "<br>");
-            for(y=1; y<=9; y++){
-                document.write(x + "*" + y + "=" + (x*y) + "<br>");
-            }
+        var x=1;
+        var sum=0;
+        while(x<=100) {
+            sum+=x;
+            x++;
         }
+        document.write("1~100까지 합 : <b>" + sum + "</b>");
     </script>
