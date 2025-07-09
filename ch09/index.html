@@ -1,20 +1,9 @@
     <script>
         var x=5;
-        var y="5";
+        var y=7;
         var result;
-        result=(x>y);
-        document.write(" x>y : " + result + "<br>");
-        result=(x==y);
-        document.write(" x==y : " + result + "<br>");
-        result=(x===y);
-        document.write(" x===y : " + result + "<br>");
-        result=(x!=y);
-        document.write(" x!=y : " + result + "<br>");
-        result=(x!==y);
-        document.write(" x!==y : " + result + "<br>");
-
-
-
-
-
+        result=(x>y)? x:y;
+        document.write("큰 값 : " + result + "<br>");
+        result=(x>y)? x-y : y-x;
+        document.write("큰 값-작은 값 : " + result + "<br>");
     </script>
