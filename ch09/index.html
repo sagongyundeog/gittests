@@ -1,31 +1,23 @@
     <script>
-        var point=93;
-        var grade="";
-        if(point>100) {
-            document.write("0점~100점 사이 값을 입력하세요." + "<p/>");
+        var day;
+        var week=new Date().getDay();
+        switch(week) {
+            case 0:
+                day="일요일";   break;
+            case 1:
+                day="월요일";   break;
+            case 2:
+                day="화요일";   break;
+            case 3:
+                day="수요일";   break;
+            case 4:
+                day="목요일";   break;
+            case 5:
+                day="금요일";   break;
+            case 6:
+                day="토요일";   break;
+            default:
+                day="없는 요일";
         }
-        else if(point>=90) {
-            grade="A";
-            document.write("아주 잘했어요." + "<p/>");
-        }
-        else if(point>=80) {
-            grade="B";
-            document.write("잘했어요." + "<p/>");
-        }
-        else if(point>=70) {
-            grade="C";
-            document.write("조금만 노력하면 잘할 수 있어요." + "<p/>");
-        }
-        else if(point>=60) {
-            grade="D";
-            document.write("좀 더 노력하세요." + "<p/>");
-        }
-        else {
-            grade="F";
-            document.write("많이 노력하세요." + "<p/>");
-        }
-        document.write("학생의 학점은 <b>" + grade + "</b>입니다.<p/>");
-        
-        
-
+        document.write("오늘은 <b>" + day + "<b/>입니다. <p/>");
     </script>
