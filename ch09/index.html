@@ -1,8 +1,16 @@
     <script>
-        function getGrade() {
-        var kor=95;
-        return kor;
-        }
-        getkor=getGrade()
-        document.write("국어 점수 : " + kor + "<br>");
+        var incData=1;
+        var decData=5;
+        var r1=r2=0;
+        r1=15%6;
+        document.write("15%3 = " + r1 + "<br>");
+        document.write("incData++ = "+ incData++ +"<br>");
+        document.write("++incData = "+ ++incData +"<br>");
+        document.write("decData-- = "+ decData-- +"<br>");
+        document.write("--decData = "+ --decData +"<br>");
+        r2=incData*decData;
+        document.write("incData*decData = "+ r2 +"<br>");
+
+
+
     </script>
