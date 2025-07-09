@@ -1,22 +1,9 @@
     <script>
-        var text;
-        var week=new Date().getDay();
-        switch(week) {
-            case 1:
-            case 2:
-                text="HTML5";
-                break;
-            case 3:
-            case 4:
-                text="자바스크립트";
-                break;
-            case 5:
-            case 6:
-                text="영어";
-                break;
-            case 0:
-            default: 
-                text="수영";
+        var x, y;
+        for(x=2; x<=5: x++) {
+            document.write("<b> ---[" + x +"단]--- </b>" + "<br>");
+            for(y=1; y<=9; y++){
+                document.write(x + "*" + y + "=" + (x*y) + "<br>");
+            }
         }
-        document.write("오늘은 <b>" + text + "</b> 학습하는 날입니다. <p/>");
     </script>
